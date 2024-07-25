@@ -1,0 +1,5 @@
+include = ["*.toml", "crates/**/*.toml"]
+
+[formatting]
+reorder_arrays = true
+reorder_keys = true

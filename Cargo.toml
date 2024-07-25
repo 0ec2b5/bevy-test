@@ -1,0 +1,38 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.dependencies]
+avian2d = "0.1"
+base_config.path = "./crates/base_config"
+base_core.path = "./crates/base_core"
+base_game.path = "./crates/base_game"
+base_retro.path = "./crates/base_retro"
+bevy = { version = "0.14", features = ["subpixel_glyph_atlas", "wayland"] }
+bevy_aseprite_ultra = "0.2.2"
+bevy_defer = "0.12.1"
+bevy_embedded_assets = "0.11.0"
+bevy_eventlistener = "0.8.1"
+bevy_mod_picking = "0.20.1"
+bevy_vector_shapes = "0.8.0"
+interpolation = "0.3.0"
+leafwing-input-manager = "0.14.0"
+log = { version = "*", features = [
+    "max_level_debug",
+    "release_max_level_warn",
+] }
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+
+[profile.wasm-release]
+inherits = "release"
+opt-level = "s"
+strip = "debuginfo"

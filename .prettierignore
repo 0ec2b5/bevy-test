@@ -1,0 +1,5 @@
+.direnv
+assets
+dist
+flake.lock
+target

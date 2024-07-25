@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "tmux new direnv exec . cargo run \\; set -p remain-on-exit on \\; set -p status off",
+      "problemMatcher": ["$rustc"],
+      "label": "rust: cargo run",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "close": true,
+        "focus": true
+      }
+    }
+  ]
+}

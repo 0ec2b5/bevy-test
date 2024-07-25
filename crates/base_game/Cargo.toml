@@ -1,0 +1,17 @@
+[package]
+edition = "2021"
+name = "base_game"
+version = "0.1.0"
+
+[dependencies]
+avian2d.workspace = true
+base_config.workspace = true
+base_core.workspace = true
+base_retro.workspace = true
+bevy.workspace = true
+bevy_aseprite_ultra.workspace = true
+bevy_defer.workspace = true
+bevy_embedded_assets.workspace = true
+bevy_eventlistener.workspace = true
+bevy_mod_picking.workspace = true
+bevy_vector_shapes.workspace = true

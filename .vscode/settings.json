@@ -1,0 +1,6 @@
+{
+  "rust-analyzer.check.command": "clippy",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

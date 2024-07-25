@@ -1,0 +1,15 @@
+[package]
+edition = "2021"
+name = "base_core"
+version = "0.1.0"
+
+[dependencies]
+base_config.workspace = true
+base_retro.workspace = true
+bevy.workspace = true
+bevy_defer.workspace = true
+bevy_eventlistener.workspace = true
+bevy_mod_picking.workspace = true
+bevy_vector_shapes.workspace = true
+interpolation.workspace = true
+leafwing-input-manager.workspace = true

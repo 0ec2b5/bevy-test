@@ -1,0 +1,14 @@
+[package]
+edition = "2021"
+name = "base_retro"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1.0.86"
+base_config = { workspace = true }
+bevy = { workspace = true }
+bevy_mod_picking = { workspace = true }
+
+[features]
+default = ["selection"]
+selection = ["bevy_mod_picking/selection"]
